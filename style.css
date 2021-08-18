@@ -3,50 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 .container {
     margin: 50px 60px;
-}
-
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    box-shadow: 0 0 20px 0 rgba(250, 250, 250, 0.2);  /*tak keluar*/
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    background-color: #103783;
-    
-}
-
-.left li {
-    float: left;
-} 
-
-.right li {
-    float: right;
-}
-
-li a {
-    color: white;
-    display: block;
-    padding: 15px 13px;
-    text-decoration: none;
-
-}
-
-
-li a:hover {
-    color: black;
-    text-decoration: none;
-    background-color: #9bafd9;
-   
-}
-
- a:active {
-    color: black;
-    text-decoration: none;
 }
 
 .header {
@@ -79,12 +40,13 @@ li a:hover {
 }
 
 .button:hover {
-    background-color: #f7f779;
+    background-color: #F0C400;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;  /*Fit one line and added if mutiple line*/
+    
 }
 
 #project {
@@ -143,7 +105,6 @@ li a:hover {
 }
 
 .container-flex {
-    background-color: #9bafd9;
     color: white;
     display: flex;
 } 
@@ -166,6 +127,21 @@ li a:hover {
     text-align: center;
     color: coral;
 }
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 /*responsive*/
 @media only screen and (max-width: 480px) {

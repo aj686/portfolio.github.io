@@ -7,36 +7,46 @@
     <link text="text/css" rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <title>Ajwad Aqhari</title>
 </head>
 <body>
 
     <!--NAVBAR SECTION-->
-    <ul>
-        <div class="left">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark text-light" style="background-color: #103783;">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            
+          </ul>
         </div>
+      </nav>
 
-        <div class="right">
-            <li><a href="#search">Search</a></li>
-        </div>
-    </ul>
 
     <!--HEADER--> 
     <header class="header">
         <h1 style="font-size: 40px; font-weight: bold;">PORTFOLIO</h1>
         <p style="font-size: 1em;">I am Junior Software Engineer</p>
-        <button class="button"><a href="#project"></a>Project</button>
+        <a class="btn btn-warning btn-lg" href="#startproject" role="button">Project</a>
     </header>
 
 
     <!--SECTION with flexbox-->  
-    <h2 id="project">The project that I have leant and built</h2>
-    <div class="row" style="justify-content: center;">
-        <div class="card">
+    <!--USING CSS ONLY 
+    
+    <div class="card">
             <img src="/img/bootstrap.png" style="width: 100%;" alt="">
             <div class="profile">
                 <p style="text-align: center;"><b>Boostrap Project</b></p>
@@ -50,132 +60,190 @@
                 <p  style="text-align: center;">Mad Lib and Guessing Number</p>
             </div> 
         </div>
-        <div class="card">
-            <img src="/img/drone.png" style="width: 100%;" alt="">
-            <div class="profile">
-                <p style="text-align: center;"><b>Autonomous Drone for Drowning Victimcs</b></p>
-                <p style="text-align: center;">Implement Machine Learning using MediaPipe and run s
-                simulation on GAZEBO in Ubuntu</p>
-            </div> 
+    -->
+   
+    <h2 id="project">The project that I have leant and built</h2>
+    <div class="row" style="justify-content: center; align-items:center;">
+        <div class="card" style="width: 17rem; position: initial;">
+            <img src="/img/bootstrap.png" width="200px" height="auto" class="card-img-top mt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pt-4">Boostrap Project</h5>
+               <!--
+                  <div class="text-center"> 
+                <a href="#" class="btn btn-lg btn-block btn-primary mt-auto">More</a>
+              </div> 
+                -->
+            </div>
+          </div>
+
+        <div class="card" style="width: 17rem; position: initial">
+            <img src="/img/python.png" width="200px" height="auto" class="card-img-top mt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pt-4">Python project</h5>
+              <!--
+                  <div class="text-center"> 
+                <a href="#" class="btn btn-lg btn-block btn-primary mt-auto">More</a>
+              </div> 
+                -->
+            </div>
+        </div>
+        
+        
+        <div class="card" style="width: 17rem; position: initial">
+            <img src="/img/drone.png" width="200px" height="auto" class="card-img-top mt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title pt-1">Autonomous Drone for Drowning Victimcs</h5>
+                <!--
+                <div class="text-center"> 
+                    <a href="#" class="btn btn-lg btn-block btn-primary mt-auto">More</a>
+                </div>  
+                -->
+              
+            </div>
+          </div>
+    </div>
+
+    <!-- First Grid -->
+    <div class="section-a p-1" style="background-color:#9bafd9">
+        <div class="container">
+            <div id ="startproject" class="container-flex">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <h1>Bootstrap Project</h1>
+                        <p class="lead">Self-learning how to develop a website by using Bootstrap Framework.
+                        </p>
+                        <p>
+                            The Bootstrap framework simply creates and modifying mobile-friendly websites a simplicity. 
+                            It assisted me in developing a website that was lot better and more user-friendly.
+                        </p>
+                        <a href="https://github.com/aj686/portfolio.github.io" class="btn btn-light mt-3">
+                            <i class="bi bi-chevron-right"></i>Read More
+                        </a>
+                    </div>
+                        
+                    <div class="col-md">
+                        <!--<i class="fa fa-anchor" style="font-size: 300px;"></i>-->
+                        <img class="img-fluid" src="img/bootstrap_graphic.png" width="300px" height="300px" alt="">
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="section-b p-1" style="background-color:white">
+        <div class="container">
+            <div id ="startproject" class="container-flex">
+                <div class="row align-items-center justify-content-between text-dark">
+                    <div class="col-md">
+                        <img class ="img-fluid" src="img/python_gear.png" width="300px" height="300px" alt="">
+                    </div>
+                        
+                    <div class="col-md">
+                        <h1>Python Project</h1>
+                        <p class="lead">Python one of my favourite programming language where Python a lot used in Data Sciene, Machine Learning and so on. 
+                        </p>
+                        <p>
+                            Mad Libs and Guessing Number are games that I created using Python in Pycharm IDE. Mad Libs games allowing you the fill the blank answer 
+                            in senteces. For Guessing Number, the player should guess the correct number.
+                        </p>
+                        <a href="https://github.com/aj686/Madib-project" class="btn btn-light mt-3">
+                            <i class="bi bi-chevron-right"></i>Read More
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Grid -->
+    <div class="section-a  p-1" style="background-color:#9bafd9">
+        <div class="container">
+            <div id ="startproject" class="container-flex">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <h1>Autonomous Drone for Drowning Victimcs</h1>
+                        <p class="lead">Final Yeart Project for this year in group. This is my project and teamates developing a autonomous drone.
+                        </p>
+                        <p>
+                            This project is help the lifeguard for rescueing a drowning victims by using a drone integrated with mechanical gripper
+                            and camera for detection. The can save people quicly and safely.
+                        </p>
+                        <a href="https://www.academia.edu/50831395/Autonomous_Drone_for_Drowning_Victims" class="btn btn-light mt-3">
+                            <i class="bi bi-chevron-right"></i>Read More
+                        </a>
+                    </div>
+                        
+                    <div class="col-md">
+                        <img class ="img-fluid" src="img/drone_graphic.png" width="300px" height="250px" alt="">
+                    </div>  
+                </div>
+            </div>
         </div>
     </div>
     
-    <!-- First Grid -->
-    <div class="container-flex">
-        <div class="flex-1">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Similique deleniti possimus magnam corporis ratione facere!
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                reiciendis eius autem eveniet mollitia, at asperiores suscipit
-                quae similique laboriosam iste minus placeat odit velit quos,
-                nulla architecto amet voluptates?
-            </p>
-            <button class="button"><a href="#project"></a>Project</button>
-        </div>
-            
-        <div class="flex-2">
-            <i class="fa fa-anchor" style="font-size: 300px;"></i>
-        </div>  
-    </div>
-
-     <!-- Second Grid -->
-     <div class="container-flex" style="background-color: #103783;">
-
-        <div class="flex-2">
-            <i class="fa fa-anchor" style="font-size: 300px;"></i>
-        </div> 
-
-        <div class="flex-1">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Similique deleniti possimus magnam corporis ratione facere!
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                reiciendis eius autem eveniet mollitia, at asperiores suscipit
-                quae similique laboriosam iste minus placeat odit velit quos,
-                nulla architecto amet voluptates?
-            </p>
-            <button class="button"><a href="#project"></a>Project</button>
-        </div>  
-    </div>
-
-     <!-- Third Grid -->
-    <div class="container-flex">
-        <div class="flex-1">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Similique deleniti possimus magnam corporis ratione facere!
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                reiciendis eius autem eveniet mollitia, at asperiores suscipit
-                quae similique laboriosam iste minus placeat odit velit quos,
-                nulla architecto amet voluptates?
-            </p>
-            <button class="button"><a href="#project"></a>Project</button>
-        </div>
-            
-        <div class="flex-2">
-            <i class="fa fa-anchor" style="font-size: 300px;"></i>
-        </div>  
-    </div>
+    
+   
 
     <!-- Footer -->
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <!--Letak profile-->
-                <img src="img/profile.png" alt="Profile picture" width="120px" height="120px" class="rounded-circle">
-                <h2>Ajwad Aqhari</h2>
-                <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Similique deleniti possimus magnam corporis ratione facere!
-                </p>
-                <div class="contactme"></div>
-                <span><i class="fa fa-phone"></i> &nbsp; 60171292199</span><br>
-                <span><i class="fa fa-envelope"></i> &nbsp; missoyen@gmail.com</span>
+    <div class="section mb-0 p-1" style="background-color: #103783;">
+        <div class="container">
+            <div class="flex">
+                <div class="row text-light ">
+                    <div class="col-lg-4 col-md mt-5 mb-5">
+                        <img src="img/profile.png" alt="Profile picture" width="120px" height="120px" class="rounded-circle">
+                        <h3>Ajwad Aqhari</h3>
+                        <p>Junior Software Engineer. Passion and determination in learning and creating
+                            new things.
+                        </p>
+                        <div class="contactme"></div>
+                        <span><i class="fa fa-phone"></i> &nbsp; 60179519690</span><br>
+                        <span><i class="fa fa-envelope"></i> &nbsp; ajwadaqhari1@gmail.com</span>
+                    </div>
+                    <div class="col-lg-4 col-md mt-5 mb-5">
+                        <h2>Quick Links</h2>
+                        <br>
+                        <div class="text-white">
+                            <a href="#" class="text-white">Home</a><br>
+                            <a href="#" class="text-white">Gallery</a><br>
+                            <a href="#" class="text-white">About</a><br>
+                        </div>
+                        <div class="social pt-4">
+                            <a href="https://www.facebook.com/muhamad.ajwad.92/"><i class="fa fa-facebook-official px-1" style="color: azure; font-size: 40px;"></i></a>
+                            <a href="https://www.linkedin.com/in/ajwad-aqhari-b90158197/"><i class="fa fa-linkedin-square px-1" style="color: azure; font-size: 40px;"></i></a>
+                            <a href="https://github.com/aj686"><i class="fa fa-github-square px-1" style="color: azure; font-size: 40px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md mt-5 mb-5">
+                        <h2>Contact Me</h2>
+                        <form action="https://formsubmit.co/ajwadaqhari1@gmail.com" method="post">
+                            <div class="form-group ">
+                                <input type="email" name="email" class="form-control rounded" placeholder="Your email...">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="message" class="form-control rounded" placeholder="Description...">
+                            </div>
+                            <button class="btn btn-dark" type="submit"><i class="fa fa-envelope"></i> Send</button>
+                            
+                        </form>
+                        <!--
+                            <a href="#" class="text-light px-3 ">
+                            <i class="bi bi-arrow-up-circle h1"></i>
+                            </a>
+                        -->
+                     
+                    </div>
+                </div>
             </div>
             
-            <div class="footer-section">
-                <h2>Quick Links</h2>
-                <br>
-                <div class="text-white">
-                    <a href="#" class="text-white">Home</a><br>
-                    <a href="#" class="text-white">Project</a><br>
-                    <a href="#" class="text-white">Contact</a><br>
-                    <a href="#" class="text-white">Search</a>
-                </div>
-                <div class="social pt-4">
-                    <a href="#"><i class="fa fa-facebook-official px-1" style="color: azure; font-size: 40px;"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square px-1" style="color: azure; font-size: 40px;"></i></a>
-                    <a href="#"><i class="fa fa-github-square px-1" style="color: azure; font-size: 40px;"></i></a>
-                    <a href="#"><i class="fa fa-youtube-play px-1" style="color: azure; font-size: 40px;"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h2>Contact Me</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control rounded" placeholder="Your email...">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Description..."></textarea>
-                    </div>
-                    <button class="btn btn-dark" type="submit"><i class="fa fa-envelope"></i> Send</button>
-                    <!--<button class="button"><i class="fa fa-envelope"></i> <a href="#project"></a>Send</button>-->
-                </form>
+        </div>
+        <div class="section pb-5"  style="background-color: #103783;">
+            <div class="d-flex justify-content-center text-light">
+                &copy; website name | Designed by Ajwad Aqhari
             </div>
         </div>    
     </div>
 
-    <div class="footer-author">
-        &copy; website name | Designed by Ajwad Aqhari
-    </div>
-    
     
     <!--First error, need to identify file first and second-->
     <script type="text/javascript" src="./utils.js"></script>
